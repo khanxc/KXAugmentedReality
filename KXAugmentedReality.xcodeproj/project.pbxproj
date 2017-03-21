@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C84B8591E7802A200A918A3 /* KXARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C84B8581E7802A200A918A3 /* KXARViewController.swift */; };
+		6CAF6CE01E76710900DCE124 /* KXMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAF6CDF1E76710900DCE124 /* KXMapViewController.swift */; };
+		6CAF6CE31E7671C900DCE124 /* ARItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAF6CE21E7671C900DCE124 /* ARItem.swift */; };
+		6CAF6CE51E767A8E00DCE124 /* MapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAF6CE41E767A8E00DCE124 /* MapAnnotation.swift */; };
 		6CD591B61E72C54600756A97 /* KXAugmentedReality.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CD591AC1E72C54500756A97 /* KXAugmentedReality.framework */; };
 		6CD591BB1E72C54600756A97 /* KXAugmentedRealityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD591BA1E72C54600756A97 /* KXAugmentedRealityTests.swift */; };
 		6CD591BD1E72C54600756A97 /* KXAugmentedReality.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CD591AF1E72C54500756A97 /* KXAugmentedReality.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +27,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6C84B8581E7802A200A918A3 /* KXARViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KXARViewController.swift; sourceTree = "<group>"; };
+		6CA423CE1E7BF1470037BDF6 /* AR_Hunt.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; name = AR_Hunt.app; path = "../../../Library/Developer/Xcode/DerivedData/AR_Hunt-gejqyykcpbqdyxfauaydepsbvrek/Build/Products/Debug-iphoneos/AR_Hunt.app"; sourceTree = "<group>"; };
+		6CAF6CDF1E76710900DCE124 /* KXMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KXMapViewController.swift; sourceTree = "<group>"; };
+		6CAF6CE21E7671C900DCE124 /* ARItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARItem.swift; sourceTree = "<group>"; };
+		6CAF6CE41E767A8E00DCE124 /* MapAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapAnnotation.swift; sourceTree = "<group>"; };
+		6CBE5F1F1E7FE04F00854E87 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; name = art.scnassets; path = "../../../Downloads/AR_Hunt Starter/AR_Hunt/art.scnassets"; sourceTree = "<group>"; };
 		6CD591AC1E72C54500756A97 /* KXAugmentedReality.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KXAugmentedReality.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CD591AF1E72C54500756A97 /* KXAugmentedReality.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KXAugmentedReality.h; sourceTree = "<group>"; };
 		6CD591B01E72C54500756A97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,12 +60,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6CA423CD1E7BF1470037BDF6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6CBE5F1F1E7FE04F00854E87 /* art.scnassets */,
+				6CA423CE1E7BF1470037BDF6 /* AR_Hunt.app */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6CAF6CDE1E765CE900DCE124 /* KXAugmentedRealityView */ = {
+			isa = PBXGroup;
+			children = (
+				6CAF6CDF1E76710900DCE124 /* KXMapViewController.swift */,
+				6C84B8581E7802A200A918A3 /* KXARViewController.swift */,
+			);
+			name = KXAugmentedRealityView;
+			sourceTree = "<group>";
+		};
+		6CAF6CE11E7671BC00DCE124 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6CAF6CE41E767A8E00DCE124 /* MapAnnotation.swift */,
+				6CAF6CE21E7671C900DCE124 /* ARItem.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		6CD591A21E72C54500756A97 = {
 			isa = PBXGroup;
 			children = (
+				6CAF6CE11E7671BC00DCE124 /* Model */,
+				6CAF6CDE1E765CE900DCE124 /* KXAugmentedRealityView */,
 				6CD591AE1E72C54500756A97 /* KXAugmentedReality */,
 				6CD591B91E72C54600756A97 /* KXAugmentedRealityTests */,
 				6CD591AD1E72C54500756A97 /* Products */,
+				6CA423CD1E7BF1470037BDF6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -149,6 +189,7 @@
 					6CD591AB1E72C54500756A97 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 8TA54VAA35;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					6CD591B41E72C54600756A97 = {
@@ -198,6 +239,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C84B8591E7802A200A918A3 /* KXARViewController.swift in Sources */,
+				6CAF6CE01E76710900DCE124 /* KXMapViewController.swift in Sources */,
+				6CAF6CE31E7671C900DCE124 /* ARItem.swift in Sources */,
+				6CAF6CE51E767A8E00DCE124 /* MapAnnotation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +367,7 @@
 		6CD591C11E72C54600756A97 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 8TA54VAA35;
@@ -334,6 +380,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.appyte.KXAugmentedReality;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -341,6 +388,7 @@
 		6CD591C21E72C54600756A97 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 8TA54VAA35;
@@ -360,6 +408,7 @@
 		6CD591C41E72C54600756A97 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 8TA54VAA35;
 				INFOPLIST_FILE = KXAugmentedRealityTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -372,6 +421,7 @@
 		6CD591C51E72C54600756A97 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 8TA54VAA35;
 				INFOPLIST_FILE = KXAugmentedRealityTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -400,6 +450,7 @@
 				6CD591C21E72C54600756A97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6CD591C31E72C54600756A97 /* Build configuration list for PBXNativeTarget "KXAugmentedRealityTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +459,7 @@
 				6CD591C51E72C54600756A97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
